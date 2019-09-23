@@ -84,6 +84,10 @@ fieldset legend {
     left: 35px;
 }
 
+.legendBox .bigCircleText::after {
+    content: '2017';
+}
+
 .legendBox .smallCircle::after {
     content: '学校';
     top: -7px;
@@ -91,6 +95,10 @@ fieldset legend {
     text-align: center;
     width: 26px;
     font-size: 12px;
+}
+
+.legendBox .smallCircleText::after {
+    content: '2016';
 }
 
 .legendBox .bigCircle {

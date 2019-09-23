@@ -28,11 +28,23 @@ const option = {
             show: true
         }
     },
+    grid: {
+        left: 100,
+        right: 20,
+        containLabel: true,
+        borderColor: 'red'
+    },
+    xAxis: {
+        type: 'category',
+        splitArea: {
+            show: true
+        },
+    },
     series: [{
             name: '2016',
             type: 'line',
             itemStyle: {
-                color: '#e2c400'
+                color: '#e2c400',
             },
             lineStyle: {
                 color: '#e2c400'
