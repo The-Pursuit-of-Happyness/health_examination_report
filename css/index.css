@@ -1,113 +1,138 @@
 @font-face {
-        font-family: 'FangSong_GB2312';
-        src: url('FangSong_GB2312.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'FangSong_GB2312';
+    src: url('FangSong_GB2312.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-body{
-        padding:0 10%;
-        margin: 100px auto;
-        
-    }
-.coverPage h1,.coverPage h2,.coverPage h3 {
-text-align: center;   
+
+body {
+    padding: 0 10%;
+    margin: 100px auto;
 }
-.coverPage .textLayoutBox{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 100px;
+
+.coverPage h1,
+.coverPage h2,
+.coverPage h3 {
+    text-align: center;
 }
-.coverPage .textLayout{
-width: 50px; 
-word-wrap: break-word; 
-letter-spacing: 20px;
-}    
-.secondPage h2{
-        text-align: center;
-    }
-    .secondPage .sText{
-        font-size: 18px;
-        color: #000;
-    }
-    .secondPage table{
-        border-spacing: 0px;
-    }
-    .secondPage .tip{
-        font-size: 18px;
-        color: #000;
-    }
-    fieldset{
-        border: 1px solid #5ab9b9;
-        border-radius: 80px;
-        position: relative;
-        width: 600px;
-        height: 350px;
-    }
-    fieldset legend{
-       text-align: center;
-       background-color: #5ab9b9;
-       color: #fff;
-       padding: 8px 20px;
-       border-radius: 20px;
-    }
-    .legendBox{
-        position: absolute;
-        top: 50%;
-        right:100px;
-        transform: translateY(-50%);
-    }
-     .legendBox .legend::after{
-        content:'';
-        position: absolute;
-        color:#5ab9b9;
-        background-color: #fff;
-        font-size: 14px;
-    }
-    .legendBox .bigCircle::after{
-        content: '全区';
-        top: -10px;
-        left: 35px;
-    }
-    .legendBox .smallCircle::after{
-        content: '学校';
-        top: -7px;
-        left: 5px;
-        text-align: center;
-        width: 26px;
-        font-size: 12px;
-    }   .legendBox .bigCircle{
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        position: relative;
-        border: 1px solid #000;
-    }
-    .legendBox .smallCircle{
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        border: 1px solid #000;
-    }
-    
-.textIndent{
-        text-indent: 34px;
+
+.coverPage .textLayoutBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
 }
-.middle{
-        text-align: center;
+
+.coverPage .textLayout {
+    width: 50px;
+    word-wrap: break-word;
+    letter-spacing: 20px;
 }
-.center{
+
+.secondPage h2 {
+    text-align: center;
+}
+
+.secondPage .sText {
+    font-size: 18px;
+    color: #000;
+}
+
+.secondPage table {
+    border-spacing: 0px;
+}
+
+.secondPage .tip {
+    font-size: 18px;
+    color: #000;
+}
+
+fieldset {
+    border: 1px solid #5ab9b9;
+    border-radius: 80px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+}
+
+fieldset legend {
+    text-align: center;
+    background-color: #5ab9b9;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.legendBox {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+
+.legendBox .legend::after {
+    content: '';
+    position: absolute;
+    color: #5ab9b9;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.legendBox .bigCircle::after {
+    content: '全区';
+    top: -10px;
+    left: 35px;
+}
+
+.legendBox .smallCircle::after {
+    content: '学校';
+    top: -7px;
+    left: 5px;
+    text-align: center;
+    width: 26px;
+    font-size: 12px;
+}
+
+.legendBox .bigCircle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.legendBox .smallCircle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px solid #000;
+}
+
+.textIndent {
+    text-indent: 34px;
+}
+
+.middle {
+    text-align: center;
+}
+
+.center {
     display: flex;
     justify-content: center;
 }
 
-.pageFour h3{
-        font-family: '方正黑体_GBK'
+.pageFour h3 {
+    font-family: '方正黑体_GBK'
 }
-.pageFour h4{
-        font-family: FangSong_GB2312;
-        font-weight: normal;
+
+.pageFour h4 {
+    font-family: FangSong_GB2312;
+    font-weight: normal;
+}
+
+.pageFive .darkblack {
+    font-weight: bolder;
 }

@@ -1,99 +1,131 @@
- const chartData = [85, 84.5, 83, 81, 80, 75];
+ const chartData1 = [85, 84.5, 83, 81, 80, 75];
  const chartName = ['六年级', '五年级', '四年级', '三年级', '二年级', '一年级'];
- const chartColor = ["#e8c223", "#e8c223", "#e8c223", "#e8c223", "#e8c223", "#f4811a"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
- const histoGram1 = echarts.init(document.getElementById('histoGram1'));
- histoGram1.setOption({
-     //  title: {
-     //     text: '单位:  '+unit,
-     //     right:0,
-     //     textStyle: {
-     //         color: '#000',
-     //         fontSize:14,
-     //     }
-     // },     
-     backgroundColor: '#fff',
-     grid: {
-         left: '2%',
-         right: '10%',
-         bottom: '10%',
-         top: '10%',
-         containLabel: true
-     },
-     xAxis: [{
-             show: false,
-         },
-         {
-             show: false,
-         }
-     ],
-     yAxis: {
-         type: 'category',
-         inverse: true,
-         show: false
-     },
+ const chartColor1 = ["#e8c223", "#e8c223", "#e8c223", "#e8c223", "#e8c223", "#f4811a"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
 
-     series: [
-         //亮色条 百分比
-         {
-             show: true,
-             type: 'bar',
-             barGap: '-100%',
-             barWidth: '30%',
-             z: 2,
-             itemStyle: {
-                 normal: {
-                     color: function(params) {
-                         var num = chartColor.length;
-                         return chartColor[params.dataIndex % num]
-                     }
-                 }
+ function histoGram(elementname, chartData, chartName, chartColor) {
+     const histoGram = echarts.init(document.getElementById(elementname));
+     histoGram.setOption({
+         //  title: {
+         //     text: '单位:  '+unit,
+         //     right:0,
+         //     textStyle: {
+         //         color: '#000',
+         //         fontSize:14,
+         //     }
+         // },     
+         backgroundColor: '#fff',
+         grid: {
+             left: '2%',
+             right: '10%',
+             bottom: '10%',
+             top: '10%',
+             containLabel: true
+         },
+         xAxis: [{
+                 show: false,
              },
-             label: {
-                 normal: {
-                     show: true,
-                     textStyle: {
+             {
+                 show: false,
+             }
+         ],
+         yAxis: {
+             type: 'category',
+             inverse: true,
+             show: false
+         },
+
+         series: [
+             //亮色条 百分比
+             {
+                 show: true,
+                 type: 'bar',
+                 barGap: '-100%',
+                 barWidth: '30%',
+                 z: 2,
+                 itemStyle: {
+                     normal: {
                          color: function(params) {
                              var num = chartColor.length;
                              return chartColor[params.dataIndex % num]
+                         }
+                     }
+                 },
+                 label: {
+                     normal: {
+                         show: true,
+                         textStyle: {
+                             color: function(params) {
+                                 var num = chartColor.length;
+                                 return chartColor[params.dataIndex % num]
+                             },
+                             fontSize: 25,
+                             fontWeight: 'bold'
                          },
-                         fontSize: 25,
-                         fontWeight: 'bold'
-                     },
-                     position: 'right',
-                     formatter: function(data) {
-                         return (chartData[data.dataIndex]).toFixed(1);
+                         position: 'right',
+                         formatter: function(data) {
+                             return (chartData[data.dataIndex]).toFixed(1);
+                         }
                      }
-                 }
+                 },
+                 data: chartData,
              },
-             data: chartData,
-         },
-         //年份
-         {
-             show: true,
-             type: 'bar',
-             xAxisIndex: 1, //代表使用第二个X轴刻度
-             barGap: '-100%',
-             barWidth: '10%',
-             itemStyle: {
-                 normal: {
-                     barBorderRadius: 200,
-                     color: 'transparent'
-                 }
-             },
-             label: {
-                 normal: {
-                     show: true,
-                     position: [0, '-20'],
-                     textStyle: {
-                         fontSize: 14,
-                         color: '#333',
-                     },
-                     formatter: function(data) {
-                         return chartName[data.dataIndex];
+             //年份
+             {
+                 show: true,
+                 type: 'bar',
+                 xAxisIndex: 1, //代表使用第二个X轴刻度
+                 barGap: '-100%',
+                 barWidth: '10%',
+                 itemStyle: {
+                     normal: {
+                         barBorderRadius: 200,
+                         color: 'transparent'
                      }
-                 }
-             },
-             data: chartData
-         }
-     ]
- });
+                 },
+                 label: {
+                     normal: {
+                         show: true,
+                         position: [0, '-20'],
+                         textStyle: {
+                             fontSize: 14,
+                             color: '#333',
+                         },
+                         formatter: function(data) {
+                             return chartName[data.dataIndex];
+                         }
+                     }
+                 },
+                 data: chartData
+             }
+         ]
+     });
+ }
+
+ histoGram('histoGram1', chartData1, chartName, chartColor1);
+ const chartData2 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor2 = ["#95C836"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram2', chartData2, chartName, chartColor2);
+
+ const chartData3 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor3 = ["#95C836"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram3', chartData3, chartName, chartColor3);
+
+ const chartData4 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor4 = ["#5ab9b9"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram4', chartData4, chartName, chartColor4);
+
+ const chartData5 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor5 = ["#95C836"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram5', chartData5, chartName, chartColor5);
+
+ const chartData6 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor6 = ["#e8c223"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram6', chartData6, chartName, chartColor6);
+
+ const chartData7 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor7 = ["#f4811a"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram7', chartData7, chartName, chartColor7);
+
+ const chartData8 = [85, 84.5, 83, 81, 80, 78];
+ const chartColor8 = ["#f4811a"]; // #95C836 ;  #5ab9b9  #e8c223  #f4811a
+ histoGram('histoGram8', chartData8, chartName, chartColor8);
