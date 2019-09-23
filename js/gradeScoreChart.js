@@ -6,11 +6,9 @@ const option = {
             left:'left',
             data:['2016','2017']
         },
-        width:400,
-        height:400,
         grid:{
-            left:200,
-            top:200,
+            left:100,
+            right:20,
           containLabel:true,
           borderColor:'red'
         },

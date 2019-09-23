@@ -126,7 +126,7 @@
                     </div>
                 </fieldset>
             </div>
-
+            <h3>全校各年级中，<span data-grade-high-score='X'>X</span>年级平均分最高，为<span data-high-score='X'>X</span>分；<span data-grade-low-score='X'>X</span>年级平均分最低，为<span data-low-score='X'>X</span>分，各年级平均分排名如下图所示：</h3>
             <div class="center">
                 <fieldset>
                     <legend class="">年级排名</legend>
@@ -134,10 +134,15 @@
                     </div>
                 </fieldset>
             </div>
-
+            <h3>同去年相比，<span data-score-down='X,X,X'>X,X,X</span>年级的成绩较上届有所降低，但<span data-score-up='X,X,X'>X,X,X</span>年级相对上届学生有所提高。其中，以X年级增加最为明显，同上届相比分差达<span data-distance-score='X'>X</span>分；<span data-down-score-much-grade='X'>X</span>年级降低最为明显，分差达<span data-down-score-much='X'>X</span>分。具体如下：</h3>
+            <div class="center">
+                <fieldset>
+                    <legend >历史得分</legend>
+                    <div id="gradeScoreChart" style="width: 600px;height:300px;"></div>
+                </fieldset>
+            </div>
         </section>
 
-        <div id="gradeScoreChart" style="width: 640px;height:600px;"></div>
         <div class="pageFour">
             <section>
                 <h3>四、各单项测试结果</h3>
@@ -146,7 +151,18 @@
                 <h4 class="middle">BMI=体重（kg）÷身高（m）2</h4>
                 <h4 class="textIndent">肥胖程度的判断不能采用体重的绝对值，它天然与身高有关。因此，BMI 通过人体体重和身高两个数值获得相对客观的参数，并用这个参数所处范围衡量身体质量。教育部也从2014年起，将BMI作为学生体质健康监测中，肥胖程度的评价标准。</h4>
                 <h4 class="textIndent">在本年度测试中，全校BMI平均分为<span data-school-BMI-average-score='X'>X</span>，相较去年提高/降低了<span data-school-BMI-level='X'>X</span>分。肥胖率为<span data-school-BMI-ratio='X'>X</span>，肥胖率相较于去年提高/降低了<span data-school-BMI-levelradio='X'>X</span>个百分点，具体分布见下图：</h4>
-                <div>扇形图</div>
+                <div class="center">
+                    <fieldset>
+                        <legend class="">BMI比例</legend>
+                        <div id="BMIChart" style="width:400px;height:300px;">
+                        </div>
+                        <div class="legendBox">
+                            <div class="bigCircle legend BigCircleText">
+                                <div class="smallCircle legend SmallText"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
                 <h4 class="textIndent">各年级超重以上学生的比例图如下：</h4>
                 <div>柱状图</div>
             </section>
@@ -199,5 +215,6 @@
 <script src='js/scoreChart.js'></script>
 <script src="js/gradeScoreChart.js"></script>
 <script src="js/histoGram.js"></script>
+<script src='js/BMIChart.js'></script>
 
 </html>

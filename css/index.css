@@ -69,6 +69,9 @@ letter-spacing: 20px;
         top: -10px;
         left: 35px;
     }
+    .legendBox .bigCircleText::after{
+        content: '2017';
+    }
     .legendBox .smallCircle::after{
         content: '学校';
         top: -7px;
@@ -76,7 +79,11 @@ letter-spacing: 20px;
         text-align: center;
         width: 26px;
         font-size: 12px;
-    }   .legendBox .bigCircle{
+    }   
+    .legendBox .smallCircleText::after{
+        content: '2016';
+    }
+    .legendBox .bigCircle{
         height: 100px;
         width: 100px;
         border-radius: 50%;
