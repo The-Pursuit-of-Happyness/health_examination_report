@@ -9,11 +9,6 @@ body {
     padding: 0 10%;
     margin: 100px auto;
 }
-/* section{
-    width: 650px;
-    height:978px;
-} */
-
 .coverPage h1,
 .coverPage h2,
 .coverPage h3 {
@@ -70,7 +65,7 @@ fieldset {
     border-radius: 80px;
     position: relative;
     width: 600px;
-    height: 350px;
+    height: 280px;
 }
 
 fieldset legend {
@@ -148,6 +143,7 @@ fieldset legend {
 .center {
     display: flex;
     justify-content: center;
+    page-break-inside: avoid;
 }
 
 .pageFour h3 {
@@ -163,4 +159,17 @@ fieldset legend {
 
 .pageFive .darkblack {
     font-weight: bolder;
+}
+
+.coverPage{
+    page-break-before: auto;          
+    page-break-after: always; 
+}
+body fieldset{
+    page-break-inside: avoid;
+}
+@media print and (color) { 
+    * { 
+        -webkit-print-color-adjust: exact;print-color-adjust: exact; 
+    }
 }

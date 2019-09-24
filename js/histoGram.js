@@ -18,8 +18,8 @@
          grid: {
              left: '2%',
              right: '10%',
-             bottom: '10%',
-             top: '10%',
+             bottom: '5%',
+             top: '5%',
              containLabel: true
          },
          xAxis: [{

@@ -9,6 +9,8 @@ const option = {
     grid: {
         left: 100,
         right: 20,
+        top:30,
+        bottom:30,
         containLabel: true,
         borderColor: 'red'
     },
