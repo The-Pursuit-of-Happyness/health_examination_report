@@ -177,6 +177,11 @@ body fieldset {
     text-align: center;
 }
 
+.centerbox {
+    display: flex;
+    justify-content: center;
+}
+
 .boldtext {
     font-weight: 400;
 }
