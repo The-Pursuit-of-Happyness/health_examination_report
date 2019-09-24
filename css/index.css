@@ -1,19 +1,24 @@
-@font-face {
+/* @font-face {
     font-family: 'FangSong_GB2312';
     src: url('FangSong_GB2312.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 body {
     padding: 0 10%;
     margin: 100px auto;
 }
+/* section{
+    width: 650px;
+    height:978px;
+} */
 
 .coverPage h1,
 .coverPage h2,
 .coverPage h3 {
     text-align: center;
+    font-family:  Helvetica Neue;
 }
 
 .coverPage .textLayoutBox {
@@ -21,6 +26,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+}
+.coverPage .textLayoutBox h1{
+    font-family: STKaiti;
+    font-size: 50px;
 }
 
 .coverPage .textLayout {
@@ -31,6 +40,7 @@ body {
 
 .secondPage h2 {
     text-align: center;
+    font-family: Georgia;
 }
 
 .secondPage .sText {
@@ -40,11 +50,19 @@ body {
 
 .secondPage table {
     border-spacing: 0px;
+    font-family: STFangsong, FangSong, FangSong_GB2312;
 }
 
 .secondPage .tip {
     font-size: 18px;
     color: #000;
+}
+h3{
+    font-family: Apple System, Noto Sans, Helvetica Neue;
+}
+.fangsong{
+    /* font-family: STFangsong, FangSong, FangSong_GB2312; */
+    font-family:  Times New Roman;
 }
 
 fieldset {
@@ -137,8 +155,10 @@ fieldset legend {
 }
 
 .pageFour h4 {
-    font-family: FangSong_GB2312;
+    /* font-family: FangSong_GB2312; */
+    font-family: STFangsong, FangSong, FangSong_GB2312;
     font-weight: normal;
+    font-style: normal;
 }
 
 .pageFive .darkblack {
