@@ -9,11 +9,12 @@ body {
     padding: 0 10%;
     margin: 100px auto;
 }
+
 .coverPage h1,
 .coverPage h2,
 .coverPage h3 {
     text-align: center;
-    font-family:  Helvetica Neue;
+    font-family: Helvetica Neue;
 }
 
 .coverPage .textLayoutBox {
@@ -22,7 +23,8 @@ body {
     justify-content: center;
     margin-bottom: 100px;
 }
-.coverPage .textLayoutBox h1{
+
+.coverPage .textLayoutBox h1 {
     font-family: STKaiti;
     font-size: 50px;
 }
@@ -38,11 +40,6 @@ body {
     font-family: Georgia;
 }
 
-.secondPage .sText {
-    font-size: 18px;
-    color: #000;
-}
-
 .secondPage table {
     border-spacing: 0px;
     font-family: STFangsong, FangSong, FangSong_GB2312;
@@ -52,12 +49,14 @@ body {
     font-size: 18px;
     color: #000;
 }
-h3{
+
+h3 {
     font-family: Apple System, Noto Sans, Helvetica Neue;
 }
-.fangsong{
+
+.fangsong {
     /* font-family: STFangsong, FangSong, FangSong_GB2312; */
-    font-family:  Times New Roman;
+    font-family: Times New Roman;
 }
 
 fieldset {
@@ -158,18 +157,61 @@ fieldset legend {
 }
 
 .pageFive .darkblack {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
-.coverPage{
-    page-break-before: auto;          
-    page-break-after: always; 
+.coverPage {
+    page-break-before: auto;
+    page-break-after: always;
 }
-body fieldset{
+
+body fieldset {
     page-break-inside: avoid;
 }
-@media print and (color) { 
-    * { 
-        -webkit-print-color-adjust: exact;print-color-adjust: exact; 
+
+.title {
+    font-family: "方正黑体_GBK";
+}
+
+.centertext {
+    text-align: center;
+}
+
+.boldtext {
+    font-weight: 400;
+}
+
+.xiaochufont {
+    font-size: 12.69mm;
+}
+
+.xiaoerfont {
+    font-size: 6.35mm;
+}
+
+.secondfont {
+    font-size: 7.76mm;
+}
+
+.thirdfont {
+    font-size: 5mm;
+}
+
+.fourthfont {
+    font-size: 4.94mm;
+}
+
+.fifthfont {
+    font-size: 3.70mm;
+}
+
+.marktext {
+    color: red;
+}
+
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
