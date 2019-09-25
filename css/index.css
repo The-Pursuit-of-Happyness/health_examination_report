@@ -44,7 +44,9 @@ body {
     border-spacing: 0px;
     font-family: STFangsong, FangSong, FangSong_GB2312;
 }
-
+table td, table th{
+    line-height: 8.255mm;
+}
 .secondPage .tip {
     font-size: 18px;
     color: #000;
@@ -160,6 +162,7 @@ fieldset legend {
     font-weight: normal;
     font-style: normal;
     font-size: 4.94mm;
+    line-height: 7.06mm;
 }
 
 .pageFive .darkblack {
@@ -194,10 +197,12 @@ body fieldset {
 
 .xiaochufont {
     font-size: 12.69mm;
+    line-height: 17.65mm;
 }
 
 .xiaoerfont {
     font-size: 6.35mm;
+    line-height: 8.255mm;
 }
 
 .secondfont {
@@ -206,6 +211,8 @@ body fieldset {
 
 .thirdfont {
     font-size: 5mm;
+    line-height: 7.06mm;
+    margin-bottom: 7.06mm;
 }
 
 .fourthfont {
