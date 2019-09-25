@@ -11,7 +11,7 @@ function lineChart(ele, data) {
             }
         },
         grid: {
-            left: 200,
+            left: '23.4%',
             right: 20,
             top:30,
             bottom:0,
@@ -23,6 +23,7 @@ function lineChart(ele, data) {
             splitArea: {
                 show: true
             },
+            interval:0,
             boundaryGap: true ,
             data: ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级'],
             axisLabel:{
