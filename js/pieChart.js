@@ -4,7 +4,7 @@ function pieChart(ele, data) {
             const BMIChartoption = {
                 legend: {
                     orient: 'vertical',
-                    x: 'left',
+                    x: 50,
                     top:'center',
                     formatter: function (name) {
                         const ratio = (30 / 100).toFixed(2)*100 +'%';
