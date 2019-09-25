@@ -30,9 +30,8 @@ body {
 }
 
 .coverPage .textLayout {
-    width: 50px;
+    width: 15mm;
     word-wrap: break-word;
-    letter-spacing: 20px;
 }
 
 .secondPage h2 {
@@ -51,7 +50,6 @@ table th {
 }
 
 .secondPage .tip {
-    font-size: 18px;
     color: #000;
 }
 
@@ -68,20 +66,20 @@ fieldset {
     border: 1px solid #5ab9b9;
     border-radius: 60px;
     position: relative;
-    width: 550px;
-    height: 300px;
+    width: 110.47mm;
+    height: 49.38mm;
 }
 
 .fieldset {
-    width: 350px;
-    height: 350px;
+    width: 92mm;
+    height: 89.59mm;
 }
 
 fieldset legend {
     text-align: center;
     background-color: #5ab9b9;
     color: #fff;
-    padding: 8px 20px;
+    padding: 1mm 5.64mm;
     border-radius: 20px;
 }
 
@@ -97,13 +95,13 @@ fieldset legend {
     position: absolute;
     color: #5ab9b9;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 3.7mm;
 }
 
 .legendBox .bigCircle::after {
     content: '全区';
     top: -10px;
-    left: 28px;
+    left: 18px;
 }
 
 .legendBox .bigCircleText::after {
@@ -124,26 +122,26 @@ fieldset legend {
 }
 
 .legendBox .bigCircle {
-    height: 80px;
-    width: 80px;
+    height: 17.64mm;
+    width: 17.64mm;
     border-radius: 50%;
     position: relative;
-    border: 1px solid #000;
+    border: 0.353mm solid #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .legendBox .smallCircle {
-    height: 35px;
-    width: 35px;
+    height: 8.82mm;
+    width: 8.82mm;
     border-radius: 50%;
     position: relative;
-    border: 1px solid #000;
+    border: 0.353mm solid #000;
 }
 
 .textIndent {
-    text-indent: 34px;
+    text-indent: 10.59mm;
 }
 
 .middle {

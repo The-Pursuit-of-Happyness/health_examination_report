@@ -58,8 +58,15 @@
                          },
                          position: 'right',
                          formatter: function(data) {
-                            return (chartData[data.dataIndex]).toFixed(1);
-                         }
+                            return (chartData[data.dataIndex]).toFixed(1)+'{small| %}';
+                         },
+                         rich:{
+                            small:{
+                                color:'#333',
+                                fontSize:12,
+                                fontWeight:'normal'
+                            }
+                        }
                      }
                  },
                  data: chartData,
