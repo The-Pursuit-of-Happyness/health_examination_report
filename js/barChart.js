@@ -57,7 +57,12 @@
                          },
                          position: 'right',
                          formatter: function(data) {
-                             return (chartData[data.dataIndex]).toFixed(1)+'分';
+                             return (chartData[data.dataIndex]).toFixed(1)+'{small|分}';
+                         },
+                         rich:{
+                             small:{
+                                 fontSize:12
+                             }
                          }
                      }
                  },
