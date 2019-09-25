@@ -3,8 +3,8 @@
  const chartColor1 = ["#e8c223", "#e8c223", "#e8c223", "#e8c223", "#e8c223", "#f4811a"];
  // #95C836 ;  #5ab9b9  #e8c223  #f4811a
 
- function histoGram(elementname, chartData, chartName, chartColor) {
-     const histoGram = echarts.init(document.getElementById(elementname));
+ function barChart(ele, {chartData, chartName, chartColor}) {
+     const histoGram = echarts.init(ele);
      histoGram.setOption({
          //  title: {
          //     text: '单位:  '+unit,
@@ -102,31 +102,31 @@
      });
  }
 
- histoGram('histoGram1', chartData1, chartName, chartColor1);
- const chartData2 = [85, 84.5, 83, 81, 80, 78];
- const chartColor2 = ["#5ab9b9"];
- histoGram('histoGram2', chartData2, chartName, chartColor2);
+//  histoGram('histoGram1', chartData1, chartName, chartColor1);
+//  const chartData2 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor2 = ["#5ab9b9"];
+//  histoGram('histoGram2', chartData2, chartName, chartColor2);
 
- const chartData3 = [85, 84.5, 83, 81, 80, 78];
- const chartColor3 = ["#5ab9b9"];
- histoGram('histoGram3', chartData3, chartName, chartColor3);
+//  const chartData3 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor3 = ["#5ab9b9"];
+//  histoGram('histoGram3', chartData3, chartName, chartColor3);
 
- const chartData4 = [85, 84.5, 83, 81, 80, 78];
- const chartColor4 = ["#5ab9b9"];
- histoGram('histoGram4', chartData4, chartName, chartColor4);
+//  const chartData4 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor4 = ["#5ab9b9"];
+//  histoGram('histoGram4', chartData4, chartName, chartColor4);
 
- const chartData5 = [85, 84.5, 83, 81, 80, 78];
- const chartColor5 = ["#5ab9b9"];
- histoGram('histoGram5', chartData5, chartName, chartColor5);
+//  const chartData5 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor5 = ["#5ab9b9"];
+//  histoGram('histoGram5', chartData5, chartName, chartColor5);
 
- const chartData6 = [85, 84.5, 83, 81, 80, 78];
- const chartColor6 = ["#5ab9b9"];
- histoGram('histoGram6', chartData6, chartName, chartColor6);
+//  const chartData6 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor6 = ["#5ab9b9"];
+//  histoGram('histoGram6', chartData6, chartName, chartColor6);
 
- const chartData7 = [85, 84.5, 83, 81, 80, 78];
- const chartColor7 = ["#5ab9b9"];
- histoGram('histoGram7', chartData7, chartName, chartColor7);
+//  const chartData7 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor7 = ["#5ab9b9"];
+//  histoGram('histoGram7', chartData7, chartName, chartColor7);
 
- const chartData8 = [85, 84.5, 83, 81, 80, 78];
- const chartColor8 = ["#5ab9b9"];
- histoGram('histoGram8', chartData8, chartName, chartColor8);
+//  const chartData8 = [85, 84.5, 83, 81, 80, 78];
+//  const chartColor8 = ["#5ab9b9"];
+//  histoGram('histoGram8', chartData8, chartName, chartColor8);

@@ -1,6 +1,5 @@
-function pirChart(eleName) {
-    const BMIChartEle = document.getElementById(eleName);
-    const BMIChart = echarts.init(BMIChartEle);
+function pieChart(ele, data) {
+    const BMIChart = echarts.init(ele);
             // 指定图表的配置项和数据
             const BMIChartoption = {
                 legend: {
@@ -70,10 +69,10 @@ function pirChart(eleName) {
             };
             BMIChart.setOption(BMIChartoption);
 }
-pirChart('BMIChart');
-pirChart('50Chart');
-pirChart('zwtqqChart');
-pirChart('feiChart');
-pirChart('situpChart');
-pirChart('50*8Chart');
-pirChart('ropeskippingChart');
+// pirChart('BMIChart');
+// pirChart('50Chart');
+// pirChart('zwtqqChart');
+// pirChart('feiChart');
+// pirChart('situpChart');
+// pirChart('50*8Chart');
+// pirChart('ropeskippingChart');

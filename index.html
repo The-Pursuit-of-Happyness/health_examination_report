@@ -109,6 +109,7 @@
             </div>
         </section>
 
+        <div class="pageThree">
         <section>
             <p class="title thirdfont">三、学校总体情况</p>
             <p class="textIndent fangsong thirdfont">
@@ -118,7 +119,7 @@
             <div class="center">
                 <fieldset>
                     <legend class="">总成绩分布</legend>
-                    <div id="scoreChart" style="width:400px;height:230px;">
+                    <div data-chart='pieChart' data-chart-type='pie' id="scoreChart" style="width:400px;height:230px;">
                     </div>
                     <div class="legendBox">
                         <div class="bigCircle legend">
@@ -137,7 +138,7 @@
                 <fieldset>
                     <legend class="">年级排名</legend>
                     <div class="centerbox">
-                        <div id="histoGram1" style="width:400px;height:230px;"></div>
+                        <div data-chart='barChart' data-chart-type='bar' id="histoGram1" style="width:400px;height:230px;"></div>
                     </div>
                 </fieldset>
             </div>
@@ -145,11 +146,11 @@
             <div class="center">
                 <fieldset>
                     <legend>历史得分</legend>
-                    <div id="gradeScoreChart" style="width: 600px;height:230px;"></div>
+                    <div data-chart='lineChart' data-chart-type='line' id="gradeScoreChart" style="width: 600px;height:230px;"></div>
                 </fieldset>
             </div>
         </section>
-
+    </div>
         <div class="pageFour">
             <section>
                 <p class="title thirdfont">四、各单项测试结果</p>
@@ -167,7 +168,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">BMI比例</legend>
-                        <div id="BMIChart" style="width:400px;height:230px;">
+                        <div data-chart='BMIPieChart' data-chart-type='pie' style="width:400px;height:230px;">
                         </div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
@@ -181,7 +182,7 @@
                     <fieldset>
                         <legend class="">年级分布</legend>
                         <div class="centerbox">
-                            <div id="histoGram2" style="width:400px;height:230px;"></div>
+                            <div data-chart='BMIBarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -200,7 +201,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">单项优秀比例</legend>
-                        <div id="feiChart" style="width:400px;height:230px;">
+                        <div data-chart='feiPieChart' data-chart-type='pie' style="width:400px;height:230px;">
                         </div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
@@ -220,7 +221,7 @@
                     <fieldset>
                         <legend class="">年级分布</legend>
                         <div class="centerbox">
-                            <div id="histoGram3" style="width:400px;height:230px;"></div>
+                            <div data-chart='feiBarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -239,7 +240,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">单项优秀比例</legend>
-                        <div id="50Chart" style="width:400px;height:230px;">
+                        <div data-chart='50meterPieChart' data-chart-type='pie' style="width:400px;height:230px;">
                         </div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
@@ -259,7 +260,7 @@
                     <fieldset>
                         <legend class="">年级排名</legend>
                         <div class="centerbox">
-                            <div id="histoGram4" style="width:400px;height:230px;"></div>
+                            <div data-chart='50meterBarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -278,7 +279,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">单项优秀比例</legend>
-                        <div id="zwtqqChart" style="width:400px;height:230px;">
+                        <div data-chart='zwtqqPieChart' data-chart-type='pie' style="width:400px;height:230px;">
                         </div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
@@ -288,7 +289,6 @@
                     </fieldset>
                 </div>
                 <h4 class="textIndent">各年级平均分见下图：</h4>
-                <div>柱状图</div>
                 <h4 class="textIndent">如图所示，
                     <span class="marktext" data-single-highscore-grade='zwtqq'>X</span>年级得分最高，为
                     <span class="marktext" data-single-highScore='zwtqq'>X</span>；
@@ -299,7 +299,7 @@
                     <fieldset>
                         <legend class="">年级分布</legend>
                         <div class="centerbox">
-                            <div id="histoGram5" style="width:400px;height:230px;"></div>
+                            <div data-chart='zwtqqBarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -318,7 +318,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">单项优秀比例</legend>
-                        <div id="ropeskippingChart" style="width:400px;height:230px;">
+                        <div data-chart='ropeskippingPieChart' data-chart-type='pie' style="width:400px;height:230px;">
                         </div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
@@ -332,7 +332,7 @@
                     <fieldset>
                         <legend class="">年级分布</legend>
                         <div class="centerbox">
-                            <div id="histoGram6" style="width:400px;height:230px;"></div>
+                            <div data-chart='ropeskippingBarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -358,7 +358,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">单项优秀比例</legend>
-                        <div id="situpChart" style="width:400px;height:230px;">
+                        <div data-chart='situpPieChart' data-chart-type='pie' style="width:400px;height:230px;">
                         </div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
@@ -372,7 +372,7 @@
                     <fieldset>
                         <legend class="">年级分布</legend>
                         <div class="centerbox">
-                            <div id="histoGram7" style="width:400px;height:230px;"></div>
+                            <div data-chart='situpBarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -398,7 +398,7 @@
                 <div class="center">
                     <fieldset>
                         <legend class="">单项优秀比例</legend>
-                        <div id="50*8Chart" style="width:400px;height:230px;"></div>
+                        <div data-chart='50*8PieChart' data-chart-type='pie' style="width:400px;height:230px;"></div>
                         <div class="legendBox">
                             <div class="bigCircle legend bigCircleText">
                                 <div class="smallCircle legend smallCircleText"></div>
@@ -411,7 +411,7 @@
                     <fieldset>
                         <legend class="">年级分布</legend>
                         <div class="centerbox">
-                            <div id="histoGram8" style="width:400px;height:230px;"></div>
+                            <div data-chart='50*8BarChart' data-chart-type='bar' style="width:400px;height:230px;"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -438,10 +438,9 @@
     </div>
 </body>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/echarts/4.3.0/echarts.min.js'></script>
-<script src="js/initData.js"></script>
-<script src='js/scoreChart.js'></script>
-<script src="js/gradeScoreChart.js"></script>
-<script src="js/histoGram.js"></script>
+<script src="js/barChart.js"></script>
 <script src='js/pieChart.js'></script>
-
+<script src="js/lineChart.js"></script>
+<script src='js/initGlobalData.js'></script>
+<script src="js/init.js"></script>
 </html>
