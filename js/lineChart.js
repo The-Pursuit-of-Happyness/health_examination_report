@@ -5,13 +5,16 @@ function lineChart(ele, data) {
             orient: 'vertical',
             top: 'center',
             left: 'left',
-            data: ['2016', '2017']
+            data: ['2016', '2017'],
+            textStyle:{
+                color:'#95c836'
+            }
         },
         grid: {
-            left: 100,
+            left: 250,
             right: 20,
             top:30,
-            bottom:30,
+            bottom:0,
             containLabel: true,
             borderColor: 'red'
         },
@@ -22,16 +25,40 @@ function lineChart(ele, data) {
             },
             boundaryGap: false,
             data: ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级'],
+            axisLabel:{
+                color:'#5ab9b9',
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#5ab9b9',
+                }
+            },
+            axisTick:{
+                show:false
+            }
         },
         yAxis: {
             type: 'value',
             splitArea: {
                 show: true
+            },
+            axisLabel:{
+                color:'#5ab9b9',
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#5ab9b9',
+                }
+            },
+            axisTick:{
+                show:false
             }
+
         },
         series: [{
                 name: '2016',
                 type: 'line',
+                animation:false,
                 itemStyle: {
                     color: '#e2c400'
                 },
@@ -43,6 +70,7 @@ function lineChart(ele, data) {
             {
                 name: '2017',
                 type: 'line',
+                animation:false,
                 itemStyle: {
                     color: '#95c836'
                 },

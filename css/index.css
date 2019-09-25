@@ -61,10 +61,14 @@ h3 {
 
 fieldset {
     border: 1px solid #5ab9b9;
-    border-radius: 80px;
+    border-radius: 60px;
     position: relative;
     width: 600px;
-    height: 280px;
+    height: 300px;
+}
+.fieldset{
+    width: 350px;
+    height: 350px;
 }
 
 fieldset legend {
@@ -78,7 +82,7 @@ fieldset legend {
 .legendBox {
     position: absolute;
     top: 50%;
-    right: 100px;
+    right: 60px;
     transform: translateY(-50%);
 }
 
@@ -93,7 +97,7 @@ fieldset legend {
 .legendBox .bigCircle::after {
     content: '全区';
     top: -10px;
-    left: 35px;
+    left: 28px;
 }
 
 .legendBox .bigCircleText::after {
@@ -114,20 +118,21 @@ fieldset legend {
 }
 
 .legendBox .bigCircle {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     position: relative;
     border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .legendBox .smallCircle {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
+    position: relative;
     border: 1px solid #000;
 }
 
@@ -154,6 +159,7 @@ fieldset legend {
     font-family: STFangsong, FangSong, FangSong_GB2312;
     font-weight: normal;
     font-style: normal;
+    font-size: 4.94mm;
 }
 
 .pageFive .darkblack {

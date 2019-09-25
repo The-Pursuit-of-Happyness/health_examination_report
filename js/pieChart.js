@@ -32,12 +32,20 @@ function pieChart(ele, data) {
                         },
                     }],
                 },
+                grid:{
+                    top:0,
+                    bottom:40,
+                    left:0,
+                    right:0,
+                    containerLabel:true,
+                },
                 series: [
                     {
                         name:'学校',
                         type:'pie',
+                        animation:false,
                         selectedMode: 'single',
-                        radius: [0, '30%'],
+                        radius: [0, '75%'],
                         label:{
                             show:false,
                         },
@@ -51,7 +59,8 @@ function pieChart(ele, data) {
                     {
                         name:'全区',
                         type:'pie',
-                        radius: ['40%', '55%'],
+                        radius: ['80%', '90%'],
+                        animation:false,
                         label:{
                             show:false,
                         },

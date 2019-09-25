@@ -13,7 +13,7 @@ function setGlobalData(classname, data) {
 		}
 		return;
 	}
-	function handleChartData(elements, data, other) {
+	function handleChartData(elements, data) {
 		for(let item of elements) {
 			const chartType = item.getAttribute('data-chart-type');
 			if(chartType === 'pie') {
@@ -22,9 +22,17 @@ function setGlobalData(classname, data) {
 			}
 			if(chartType === 'bar') {
 				// const chartDataName = item.getAttribute('data-chart');
-				const chartData = [85, 84.5, 83, 81, 80, 75];
+				const chartData = [100, 84.5, 83, 81, 80, 75];
 				const chartName = ['六年级', '五年级', '四年级', '三年级', '二年级', '一年级'];
-				barChart(item,{chartData,chartName, chartColor: other && other.chartColor});
+				const chartColor = ["#e8c223", "#e8c223", "#e8c223", "#e8c223", "#e8c223", "#f4811a"]
+				barChart(item,{chartData,chartName, chartColor});
+			}
+			if(chartType === 'singleBar') {
+				// const chartDataName = item.getAttribute('data-chart');
+				const chartData = [100, 84.5, 83, 81, 80, 75];
+				const chartName = ['六年级', '五年级', '四年级', '三年级', '二年级', '一年级'];
+				const chartColor = ['#5ab9b9']
+				singleBarChart(item,{chartData,chartName, chartColor});
 			}
 			if(chartType === 'line') {
 				// const chartDataName = item.getAttribute('data-chart');
@@ -62,10 +70,7 @@ function setGlobalData(classname, data) {
 	
 	const partThreeEle = targetEle.querySelector('.pageThree > section');
 	const partThreeChartEle = partThreeEle.querySelectorAll("[data-chart]");
-	const other = {
-		chartColor:["#e8c223", "#e8c223", "#e8c223", "#e8c223", "#e8c223", "#f4811a"]
-	};
-	handleChartData(partThreeChartEle, data, other);
+	handleChartData(partThreeChartEle, data);
 	//第四部分
 	for (const s of targetEle.querySelectorAll(".pageFour > section")) {
 		const t = s.querySelector("[data-single-average-score]");
@@ -92,7 +97,7 @@ function setGlobalData(classname, data) {
 			handleHasVal(highScore, data, type, 'highScore');
 			handleHasVal(lowscoreGrade, data, type, 'lowScoreGrade');
 			handleHasVal(lowScore, data, type, 'lowScore');
-			handleChartData(chartElements, data, {chartColor:['#5ab9b9']});
+			handleChartData(chartElements, data);
 		}
 	}
 	

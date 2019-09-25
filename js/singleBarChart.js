@@ -3,9 +3,9 @@
 //  const chartColor1 = ["#e8c223", "#e8c223", "#e8c223", "#e8c223", "#e8c223", "#f4811a"];
 //  // #95C836 ;  #5ab9b9  #e8c223  #f4811a
 
- function barChart(ele, {chartData, chartName, chartColor}) {
+ function singleBarChart(ele, {chartData, chartName, chartColor}) {
      const histoGram = echarts.init(ele);
-     histoGram.setOption({
+     histoGram.setOption({    
          backgroundColor: '#fff',
          grid: {
              left: 10,
@@ -48,16 +48,17 @@
                      normal: {
                          show: true,
                          textStyle: {
-                             color: function(params) {
-                                 var num = chartColor.length;
-                                 return chartColor[params.dataIndex % num]
-                             },
-                             fontSize: 18,
-                             fontWeight: 'bold'
+                            //  color: function(params) {
+                            //      var num = chartColor.length;
+                            //      return chartColor[params.dataIndex % num]
+                            //  },
+                            color:'#333',
+                             fontSize: 16,
+                             fontWeight:'bold',
                          },
                          position: 'right',
                          formatter: function(data) {
-                             return (chartData[data.dataIndex]).toFixed(1)+'分';
+                            return (chartData[data.dataIndex]).toFixed(1);
                          }
                      }
                  },
@@ -86,7 +87,6 @@
                              color: '#333',
                          },
                          formatter: function(data) {
-                             console.log('chartName[data.dataIndex]:',chartName[data.dataIndex])
                              return chartName[data.dataIndex];
                          }
                      }
