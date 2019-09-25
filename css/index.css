@@ -8,6 +8,7 @@
 body {
     padding: 0 10%;
     margin: 100px auto;
+    font: 12px/1.5 Tahoma, Helvetica, Arial, '宋体', sans-serif;
 }
 
 .coverPage h1,
@@ -17,15 +18,15 @@ body {
     font-family: Helvetica Neue;
 }
 
+.youyuanfont {
+    font-family: "幼圆", "YouYuan", "Tahoma";
+}
+
 .coverPage .textLayoutBox {
+    font-family: "华文新魏", "STKaiti";
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.coverPage .textLayoutBox h1 {
-    font-family: STKaiti;
-    font-size: 50px;
 }
 
 .coverPage .textLayout {
@@ -43,9 +44,12 @@ body {
     border-spacing: 0px;
     font-family: STFangsong, FangSong, FangSong_GB2312;
 }
-table td, table th{
+
+table td,
+table th {
     line-height: 8.255mm;
 }
+
 .secondPage .tip {
     font-size: 18px;
     color: #000;
@@ -67,7 +71,8 @@ fieldset {
     width: 550px;
     height: 300px;
 }
-.fieldset{
+
+.fieldset {
     width: 350px;
     height: 350px;
 }
@@ -191,25 +196,30 @@ body fieldset {
 }
 
 .boldtext {
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .xiaochufont {
     font-size: 12.69mm;
 }
-.xiaochuLineHeight{
+
+.xiaochuLineHeight {
     line-height: 16.49mm;
 }
-.chuhaofont{
-    font-size: 14.83mm;
+
+.chuhaofont {
+    font-size: 14.8mm;
     line-height: 19.28mm;
 }
-.doubleLineHeight{
+
+.doubleLineHeight {
     line-height: 6.5mm;
 }
-.maxLineHeight{
+
+.maxLineHeight {
     line-height: 17.65mm;
 }
+
 .xiaoerfont {
     font-size: 6.35mm;
     line-height: 8.255mm;
