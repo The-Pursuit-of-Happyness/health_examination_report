@@ -7,7 +7,7 @@
 
 body {
     padding: 0 10%;
-    margin: 100px auto;
+    margin: 28.21mm auto;
     font: 12px/1.5 Tahoma, Helvetica, Arial, '宋体', sans-serif;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .secondPage table {
-    border-spacing: 0px;
+    border-spacing: 0;
     font-family: STFangsong, FangSong, FangSong_GB2312;
 }
 
@@ -63,7 +63,7 @@ h3 {
 }
 
 fieldset {
-    border: 1px solid #5ab9b9;
+    border: 0.353mm solid #5ab9b9;
     border-radius: 60px;
     position: relative;
     width: 110.47mm;
