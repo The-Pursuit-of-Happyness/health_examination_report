@@ -32,7 +32,7 @@
              {
                  show: true,
                  type: 'bar',
-                 barWidth: 15,
+                 barWidth: '35%',
                  barCategoryGap:60,
                  z: 2,
                  animation:false,

@@ -11,7 +11,7 @@ function lineChart(ele, data) {
             }
         },
         grid: {
-            left: '23.4%',
+            left: '32.4%',
             right: 20,
             top:30,
             bottom:0,

@@ -64,15 +64,15 @@ h3 {
 
 fieldset {
     border: 0.353mm solid #5ab9b9;
-    border-radius: 60px;
+    border-radius: 14mm;
     position: relative;
-    width: 110.47mm;
-    height: 49.38mm;
+    width:139.75mm;
+    height:70.54mm;
 }
 
 .fieldset {
-    width: 92mm;
-    height: 89.59mm;
+    width: 84mm;
+    height:78.66mm;
 }
 
 fieldset legend {
@@ -80,13 +80,13 @@ fieldset legend {
     background-color: #5ab9b9;
     color: #fff;
     padding: 1mm 5.64mm;
-    border-radius: 20px;
+    border-radius: 4mm;
 }
 
 .legendBox {
     position: absolute;
     top: 50%;
-    right: 60px;
+    right: 17%;
     transform: translateY(-50%);
 }
 
@@ -100,8 +100,11 @@ fieldset legend {
 
 .legendBox .bigCircle::after {
     content: '全区';
-    top: -10px;
-    left: 18px;
+    top: -1.8mm;
+    left: 50%;
+    font-size: 3.23mm;
+    transform: translateX(-50%);
+    font-size: 3.23mm;
 }
 
 .legendBox .bigCircleText::after {
@@ -110,11 +113,11 @@ fieldset legend {
 
 .legendBox .smallCircle::after {
     content: '学校';
-    top: -7px;
-    left: 5px;
-    text-align: center;
-    width: 26px;
-    font-size: 12px;
+    top: -1.6mm;
+    left: 50%;
+    font-size: 3.23mm;
+    transform: translateX(-50%);
+    font-size: 3.23mm;
 }
 
 .legendBox .smallCircleText::after {
@@ -126,7 +129,7 @@ fieldset legend {
     width: 17.64mm;
     border-radius: 50%;
     position: relative;
-    border: 0.353mm solid #000;
+    border: 0.253mm solid #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +140,7 @@ fieldset legend {
     width: 8.82mm;
     border-radius: 50%;
     position: relative;
-    border: 0.353mm solid #000;
+    border: 0.253mm solid #000;
 }
 
 .textIndent {
